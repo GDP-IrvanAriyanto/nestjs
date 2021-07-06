@@ -11,6 +11,7 @@ import { RoleModule } from './role/role.module';
 import { AuthorityModule } from './authority/authority.module';
 import { AclRuleModule } from './acl-rule/acl-rule.module';
 import { AuthModule } from './auth/auth.module';
+import { PassportModule } from '@nestjs/passport';
 
 @Module({
   imports: [

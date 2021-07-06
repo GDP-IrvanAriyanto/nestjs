@@ -45,7 +45,7 @@ export class User extends Model<User> {
   roleId!: number;
 
   @BelongsTo(() => Role)
-  roles!: Role;
+  role!: Role;
 
   @AllowNull(false)
   @Column({ field: 'is_active' })

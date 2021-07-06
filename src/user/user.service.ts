@@ -24,9 +24,8 @@ export class UserService {
 
   findOne(username: string): Promise<User> {
     return this.userModel.findOne({
-      where: {
-        username,
-      },
+      include: { model: Role, include: [{ model: AclRule }] },
+      where: { username: username },
     });
   }
 
